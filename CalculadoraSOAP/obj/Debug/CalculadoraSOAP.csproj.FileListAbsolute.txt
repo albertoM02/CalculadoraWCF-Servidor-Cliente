@@ -1,0 +1,14 @@
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\bin\CalculadoraSOAP.dll.config
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\bin\CalculadoraSOAP.dll
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\bin\CalculadoraSOAP.pdb
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.csproj.AssemblyReference.cache
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.csproj.CoreCompileInputs.cache
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.dll
+C:\Users\alberto.moro\source\repos\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.pdb
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\bin\CalculadoraSOAP.dll.config
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\bin\CalculadoraSOAP.dll
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\bin\CalculadoraSOAP.pdb
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.csproj.AssemblyReference.cache
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.csproj.CoreCompileInputs.cache
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.dll
+C:\Users\alberto.moro\Desktop\PruebaSoapWCF\CalculadoraSOAP\obj\Debug\CalculadoraSOAP.pdb
