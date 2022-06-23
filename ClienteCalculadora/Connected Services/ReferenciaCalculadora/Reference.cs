@@ -9,7 +9,45 @@
 
 namespace ReferenciaCalculadora
 {
+    using System.Runtime.Serialization;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Error", Namespace="http://schemas.datacontract.org/2004/07/CalculadoraSOAP")]
+    public partial class Error : object
+    {
+        
+        private string codigoField;
+        
+        private string mensajeField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string codigo
+        {
+            get
+            {
+                return this.codigoField;
+            }
+            set
+            {
+                this.codigoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string mensaje
+        {
+            get
+            {
+                return this.mensajeField;
+            }
+            set
+            {
+                this.mensajeField = value;
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ReferenciaCalculadora.ICalculadora")]
@@ -17,10 +55,17 @@ namespace ReferenciaCalculadora
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculadora/SumaValores", ReplyAction="http://tempuri.org/ICalculadora/SumaValoresResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(ReferenciaCalculadora.Error), Action="http://tempuri.org/ICalculadora/SumaValoresErrorFault", Name="Error", Namespace="http://schemas.datacontract.org/2004/07/CalculadoraSOAP")]
         System.Threading.Tasks.Task<int> SumaValoresAsync(int v1, int v2);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculadora/RestaValores", ReplyAction="http://tempuri.org/ICalculadora/RestaValoresResponse")]
         System.Threading.Tasks.Task<int> RestaValoresAsync(int v1, int v2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculadora/DivideValoresLanza", ReplyAction="http://tempuri.org/ICalculadora/DivideValoresLanzaResponse")]
+        System.Threading.Tasks.Task<int> DivideValoresLanzaAsync(int v1, int v2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculadora/DivideValoresGestiona", ReplyAction="http://tempuri.org/ICalculadora/DivideValoresGestionaResponse")]
+        System.Threading.Tasks.Task<int> DivideValoresGestionaAsync(int v1, int v2);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
@@ -81,6 +126,16 @@ namespace ReferenciaCalculadora
         public System.Threading.Tasks.Task<int> RestaValoresAsync(int v1, int v2)
         {
             return base.Channel.RestaValoresAsync(v1, v2);
+        }
+        
+        public System.Threading.Tasks.Task<int> DivideValoresLanzaAsync(int v1, int v2)
+        {
+            return base.Channel.DivideValoresLanzaAsync(v1, v2);
+        }
+        
+        public System.Threading.Tasks.Task<int> DivideValoresGestionaAsync(int v1, int v2)
+        {
+            return base.Channel.DivideValoresGestionaAsync(v1, v2);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
